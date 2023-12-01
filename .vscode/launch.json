@@ -10,7 +10,11 @@
       "request": "launch",
       "program": "${workspaceFolder}/run.py",
       "console": "integratedTerminal",
-      "justMyCode": true
+      "justMyCode": true,
+      "args": [
+        "--day",
+        "1"
+      ]
     },
     {
       "name": "[Silver] Solution",
