@@ -12,8 +12,6 @@
       "console": "integratedTerminal",
       "justMyCode": true,
       "args": [
-        "--day",
-        "1"
       ]
     },
     {
