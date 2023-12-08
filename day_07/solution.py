@@ -207,7 +207,6 @@ def solve(input: str, second: bool):
     hands = [(x.split(' ')[0], int(x.split(' ')[1])) for x in input.splitlines()]
     hands = sorted(hands, key=functools.cmp_to_key(compare_hands))
     for i, hand in enumerate(hands):
-        print(hand[0], hand[1], (i+1)*hand[1])
         total += (i+1)*hand[1]
     return total
         
@@ -217,7 +216,6 @@ def solve_second(input: str):
     hands = [(x.split(' ')[0], int(x.split(' ')[1])) for x in input.splitlines()]
     hands = sorted(hands, key=functools.cmp_to_key(compare_hands_2))
     for i, hand in enumerate(hands):
-        print(hand[0], hand[1], (i+1)*hand[1])
         total += (i+1)*hand[1]
     return total
 
