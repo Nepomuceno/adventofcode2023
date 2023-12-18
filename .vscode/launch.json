@@ -12,6 +12,8 @@
       "console": "integratedTerminal",
       "justMyCode": true,
       "args": [
+        "--day",
+        "17"
       ]
     },
     {
@@ -21,7 +23,7 @@
       "program": "${workspaceFolder}/run.py",
       "console": "integratedTerminal",
       "justMyCode": true,
-      "args": ["--solve"]
+      "args": ["--solve", "--day", "17"]
     },
     {
       "name": "[Gold] Sample",
