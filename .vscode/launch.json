@@ -29,7 +29,7 @@
       "program": "${workspaceFolder}/run.py",
       "console": "integratedTerminal",
       "justMyCode": true,
-      "args": ["--second", "--day", "18"]
+      "args": ["--second"]
     },
     {
       "name": "[Gold] Solution",
