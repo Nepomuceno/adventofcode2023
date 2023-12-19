@@ -2,33 +2,6 @@ import time
 from colorama import Fore, Back, Style
 import itertools
 from heapq import heappush, heappop
-
-def is_viable_path(map, path, paths):
-    destination = path['position']
-    
-    if len(path['path']) < 4:
-        return True
-    if path['position'] in path['visited']:
-        return False
-    if path['path'][-1]['position'][0] < path['path'][-2]['position'][0]:
-        if path['path'][-2]['position'][0] < path['path'][-3]['position'][0]:
-            if path['path'][-3]['position'][0] < path['path'][-4]['position'][0]:
-                return False
-    if path['path'][-1]['position'][0] > path['path'][-2]['position'][0]:
-        if path['path'][-2]['position'][0] > path['path'][-3]['position'][0]:
-            if path['path'][-3]['position'][0] > path['path'][-4]['position'][0]:
-                return False
-    if path['path'][-1]['position'][1] < path['path'][-2]['position'][1]:
-        if path['path'][-2]['position'][1] < path['path'][-3]['position'][1]:
-            if path['path'][-3]['position'][1] < path['path'][-4]['position'][1]:
-                return False
-    if path['path'][-1]['position'][1] > path['path'][-2]['position'][1]:
-        if path['path'][-2]['position'][1] > path['path'][-3]['position'][1]:
-            if path['path'][-3]['position'][1] > path['path'][-4]['position'][1]:
-                return False
-    # check if there is a path in all the paths that cot to this destination with a lower score
-    return True
-    
         
 
 def solve(input: str, second: bool):
